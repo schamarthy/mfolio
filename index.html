@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+	<title>Mfolio</title>
+</head>
+<body>
+
+<div ng-controller="c2">
+	<h3 class="p-3 mb-2 bg-primary text-white">Add Mutual fund</h3>
+	<form class="form-horizontal" role="form" ng-submit="addItem()">
+	<div class="form-group">
+		<label class="col-md-1 control-label">MF Name</label>
+		<div class="col-md-4">
+			<input type="text" class="form-control" name="MFName"
+				ng-model="MFname" />
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-md-1 control-label">Folio Number</label>
+		<div class="col-md-4">
+			<input type="text" class="form-control" name="FolioNumber"
+				ng-model="folioNumber" />
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-md-1 control-label">Invested amount</label>
+		<div class="col-md-4">
+			<input type="text" class="form-control" name=Investedamount"
+				ng-model="Investedamount" />
+		</div>
+	</div>
+		<div class="form-group">
+		<label class="col-md-1 control-label">Units</label>
+		<div class="col-md-4">
+			<input type="text" class="form-control" name="units"
+				ng-model="units" />
+		</div>
+	</div>
+		<div class="form-group">
+		<label class="col-md-1 control-label">NAV</label>
+		<div class="col-md-4">
+			<input type="text" class="form-control" name="NAV"
+				ng-model="NAV" />
+		</div>
+	</div>
+		<div class="form-group">
+		<label class="col-md-1 control-label">XIR</label>
+		<div class="col-md-4">
+			<input type="text" class="form-control" name="XIR"
+				ng-model="XIR" />
+		</div>
+	</div>
+	<div class="form-group">								
+		<div style="padding-left:110px">
+			<input type="submit" value="Add" class="btn btn-primary"/>
+		</div>
+	</div>
+</form>
+			
+			
+
+</div>
+<h3 <h3 class="p-3 mb-2 bg-primary text-white">Portfolio</h3>
+<div ng-controller="c2">	
+	<!-- {{data}} -->
+	<table class="table table-condensed table-striped table-bordered">                
+	    <tr>
+	        <th>Mutual fund Name</th>
+	        <th>Folio Number</th>
+	        <th>Invested amount</th>
+	        <th>Units</th>
+	        <th>NAV</th>
+	        <th>XIR</th>
+	    </tr>
+	    <tbody>
+	        <tr ng-repeat="x in data">
+	            <td>{{x.MFName}}</td>
+	            <td>{{x.folioNumber}}</td>
+	            <td>{{x.InvestedAmount}}</td>
+	            <td>{{x.units}}</td>
+	            <td>{{x.NAV}}</td>
+	            <td>{{x.XIR}}</td>
+	        </tr>
+	    </tbody>
+	</table>
+</div>
+
+
+<!--<link rel="stylesheet"   href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">-->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script	src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script	src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.17/angular.min.js"></script>
+
+<script type="text/javascript" src="/scripts/showPortfolio.js"></script>
+</body>
+</html>
