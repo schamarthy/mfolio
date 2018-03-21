@@ -6,6 +6,17 @@
 </head>
 <body>
 
+<div class="navbar">
+	<!--<ul class="nav navbar-nav">-->
+		<ul class="nav nav-tabs">
+		<li ng-class="navClass('home')"><a href='' ng-click="loadHome()">Portfolio</a></li>
+		<li ng-class="navClass('about')"><a href='' ng-click="loadAbout()">About Us</a></li>
+		<li ng-class="navClass('contact')"><a href='' ng-click="loadContact()">Contact Us</a></li>
+		<li ng-class="navClass('contact')"><a href='' ng-click="loadContact()">Me</a></li>
+
+	</ul>
+</div>
+
 <div ng-controller="c2">
 	<h3 class="p-3 mb-2 bg-primary text-white">Add Mutual fund</h3>
 	<form class="form-horizontal" role="form" ng-submit="addItem()">
@@ -87,7 +98,7 @@
 </div>
 
 
-<!--<link rel="stylesheet"   href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">-->
+<link rel="stylesheet"   href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script	src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
