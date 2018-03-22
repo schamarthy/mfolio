@@ -35,8 +35,11 @@
 	<div class="form-group">
 		<label class="col-md-1 control-label">MF Name</label>
 		<div class="col-md-4">
-			<input type="text" class="form-control" name="MFName"
-				ng-model="MFname" />
+			<!-- <input type="text" class="form-control" name="MFName"
+				ng-model="MFname" /> -->
+			<select name="mname" id="mname"
+      			ng-options="x.MFName for x in data"
+      			ng-model="mname" class="form-control"></select>
 		</div>
 	</div>
 	<div class="form-group">

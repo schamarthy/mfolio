@@ -1,5 +1,3 @@
-var app = angular.module('myApp', []);
-
 portfolio1Obj =  {"portfolio1":[
 						    { "MFName":"Aditya Birla Sun Life Banking & PSU Debt Fund Growth-Regular Plan", 
 						    "folioNumber":"1018188417",
@@ -34,35 +32,20 @@ portfolio1Obj =  {"portfolio1":[
 						    
 						]};
 
-app.controller('c1', function($scope, $http) {
-  $http.get("data.json")
-  .then(function(response) {
-      $scope.data = response.data.portfolio1;
-    });
 
-});
-
-app.controller('c2', function($scope) {
+angular.module('testModule',[]).controller('testctrl', function($scope) {
 
 		
-		$scope.data=portfolio1Obj.portfolio1;
-		$scope.name=portfolio1Obj.portfolio1;
+		$scope.hello="World";
+		$scope.p1=portfolio1Obj.portfolio1;
 
-
-
-  $scope.addItem = function(){
-
-  	console.log("Inside addItem function");	
-  
-	$scope.data.push({ 'MFName':$scope.MFname, 'folioNumber': $scope.folioNumber, 'InvestedAmount':$scope.Investedamount, 'units':$scope.units, 'NAV':$scope.NAV, 'XIR':$scope.XIR });
-	$scope.MFname='';
-	$scope.folioNumber='';
-	$scope.Investedamount='';
-	$scope.units='';
-	$scope.NAV='';
-	$scope.XIR='';
-	//console.log(data);
-};
+//Test sample select
+		$scope.data = {
+    availableOptions: [
+      {id: '1', name: 'Option A'},
+      {id: '2', name: 'Option B'},
+      {id: '3', name: 'Option C'}
+    ],
+    selectedOption: {id: '3', name: 'Option C'} //This sets the default value of the select in the ui
+    };
 });
-
-
