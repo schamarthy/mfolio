@@ -34,6 +34,7 @@ portfolio1Obj =  {"portfolio1":[
 						    
 						]};
 
+
 app.controller('c1', function($scope, $http) {
   $http.get("data.json")
   .then(function(response) {
