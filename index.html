@@ -5,6 +5,8 @@
 	<title>Mfolio</title>
 </head>
 <body>
+
+<!-- Code to add Nav bar -->
 <nav class="navbar navbar-inverse">
 	<div class="container-fluid">
 		<div class="navbar-header">
@@ -29,19 +31,23 @@
 	</div>
 </nav>
 
-<div ng-controller="c2">
+<!-- Code to add funds from list box and submit
+To-Do - Write the submit contents to JSON file
+-->
+<div ng-controller="addMFController">
 	<h3 class="p-3 mb-2 bg-primary text-white">Add Mutual fund</h3>
 	<form class="form-horizontal" role="form" ng-submit="addItem()">
 	<div class="form-group">
 		<label class="col-md-1 control-label">MF Name</label>
 		<div class="col-md-4">
-			<!-- <input type="text" class="form-control" name="MFName"
-				ng-model="MFname" /> -->
+			<!--<input type="text" class="form-control" name="MFName"
+				ng-model="mname" />-->
 			<select name="mname" id="mname"
       			ng-options="x.MFName for x in data"
       			ng-model="mname" class="form-control"></select>
 		</div>
 	</div>
+
 	<div class="form-group">
 		<label class="col-md-1 control-label">Folio Number</label>
 		<div class="col-md-4">
@@ -88,9 +94,9 @@
 
 </div>
 <h3 <h3 class="p-3 mb-2 bg-primary text-white">Portfolio</h3>
-<div ng-controller="c2">	
-	<!-- {{data}} -->
-	<table class="table table-condensed table-striped table-bordered">                
+<div ng-controller="addMFController">
+	 <!--{{data}}-->
+	<table class="table table-condensed table-striped table-bordered">
 	    <tr>
 	        <th>Mutual fund Name</th>
 	        <th>Folio Number</th>

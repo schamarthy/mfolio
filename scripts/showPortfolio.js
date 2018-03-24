@@ -34,35 +34,59 @@ portfolio1Obj =  {"portfolio1":[
 						    
 						]};
 
+var mfobject ='';
 
-app.controller('c1', function($scope, $http) {
-  $http.get("data.json")
+
+app.controller('showmfController', function($scope, $http) {
+  /*$http.get("data.json")
   .then(function(response) {
       $scope.data = response.data.portfolio1;
     });
 
+
+*/
+
+    $http({
+        method : "GET",
+        url : "scripts/data.json"
+    }).then(function mySuccess(response) {
+        mfobject= response.data;
+        $scope.data=mfobject.portfolio1;
+    }, function myError(response) {
+        $scope.data = response.statusText;
+    });
 });
 
-app.controller('c2', function($scope) {
+app.controller('addMFController', function($scope) {
 
-		
+    	//$scope.data = response.data.portfolio1;
 		$scope.data=portfolio1Obj.portfolio1;
-		$scope.name=portfolio1Obj.portfolio1;
-
+		//$scope.name=portfolio1Obj.portfolio1;
 
 
   $scope.addItem = function(){
 
-  	console.log("Inside addItem function");	
-  
-	$scope.data.push({ 'MFName':$scope.MFname, 'folioNumber': $scope.folioNumber, 'InvestedAmount':$scope.Investedamount, 'units':$scope.units, 'NAV':$scope.NAV, 'XIR':$scope.XIR });
-	$scope.MFname='';
-	$scope.folioNumber='';
-	$scope.Investedamount='';
-	$scope.units='';
-	$scope.NAV='';
-	$scope.XIR='';
+  	console.log("Inside addItem function");
+      $scope.data=portfolio1Obj.portfolio1;
+    //  var toAddjson ={ 'MFName':$scope.mname.MFName, 'folioNumber': $scope.folioNumber, 'InvestedAmount':$scope.Investedamount, 'units':$scope.units, 'NAV':$scope.NAV, 'XIR':$scope.XIR };
+	$scope.data.push({ 'MFName':$scope.mname.MFName, 'folioNumber': $scope.folioNumber, 'InvestedAmount':$scope.Investedamount, 'units':$scope.units, 'NAV':$scope.NAV, 'XIR':$scope.XIR });
+
 	//console.log(data);
+
+/*
+//writing code to push data to json
+
+      $http.post('scripts/data.json',JSON.stringify(toAddjson));
+      console.log("after http.post");
+//end of code to write data to json
+*/
+
+      $scope.MFname='';
+      $scope.folioNumber='';
+      $scope.Investedamount='';
+      $scope.units='';
+      $scope.NAV='';
+      $scope.XIR='';
 };
 });
 

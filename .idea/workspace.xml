@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="daec04f7-ecaa-414c-b90f-c1c4441410de" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data.json" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/showPortfolio.js" afterPath="$PROJECT_DIR$/scripts/showPortfolio.js" />
     </list>
@@ -19,8 +19,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="736">
-              <caret line="121" column="60" lean-forward="false" selection-start-line="121" selection-start-column="60" selection-end-line="121" selection-end-column="60" />
+            <state relative-caret-position="488">
+              <caret line="96" column="35" lean-forward="false" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -29,10 +29,10 @@
       <file leaf-file-name="showPortfolio.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/showPortfolio.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state relative-caret-position="531">
+              <caret line="59" column="22" lean-forward="false" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="31" />
               <folding>
-                <marker date="1521908810544" expanded="true" signature="57:1149" ph="{...}" />
+                <marker date="1521913966524" expanded="true" signature="57:1149" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -46,6 +46,11 @@
         <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>mfname</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -102,20 +107,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -546,12 +537,12 @@
       <workItem from="1521651283531" duration="5823000" />
       <workItem from="1521696103908" duration="650000" />
       <workItem from="1521784168986" duration="22000" />
-      <workItem from="1521908751796" duration="62000" />
+      <workItem from="1521908751796" duration="5222000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7175000" />
+    <option name="totallyTimeSpent" value="12335000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -597,6 +588,10 @@
     <breakpoint-manager />
     <watches-manager />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -611,7 +606,7 @@
         <state relative-caret-position="459">
           <caret line="27" column="37" lean-forward="false" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="37" />
           <folding>
-            <marker date="1521908810544" expanded="true" signature="57:1149" ph="{...}" />
+            <marker date="1521913966524" expanded="true" signature="57:1149" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -629,7 +624,7 @@
         <state relative-caret-position="459">
           <caret line="27" column="37" lean-forward="false" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="37" />
           <folding>
-            <marker date="1521908810544" expanded="true" signature="57:1149" ph="{...}" />
+            <marker date="1521913966524" expanded="true" signature="57:1149" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -647,7 +642,7 @@
         <state relative-caret-position="459">
           <caret line="27" column="37" lean-forward="false" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="37" />
           <folding>
-            <marker date="1521908810544" expanded="true" signature="57:1149" ph="{...}" />
+            <marker date="1521913966524" expanded="true" signature="57:1149" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -661,18 +656,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/showPortfolio.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state relative-caret-position="531">
+          <caret line="59" column="22" lean-forward="false" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="31" />
           <folding>
-            <marker date="1521908810544" expanded="true" signature="57:1149" ph="{...}" />
+            <marker date="1521913966524" expanded="true" signature="57:1149" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="121" column="60" lean-forward="false" selection-start-line="121" selection-start-column="60" selection-end-line="121" selection-end-column="60" />
+        <state relative-caret-position="488">
+          <caret line="96" column="35" lean-forward="false" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
           <folding />
         </state>
       </provider>
