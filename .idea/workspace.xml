@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="daec04f7-ecaa-414c-b90f-c1c4441410de" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data.json" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/showPortfolio.js" afterPath="$PROJECT_DIR$/scripts/showPortfolio.js" />
-    </list>
+    <list default="true" id="daec04f7-ecaa-414c-b90f-c1c4441410de" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -537,12 +533,12 @@
       <workItem from="1521651283531" duration="5823000" />
       <workItem from="1521696103908" duration="650000" />
       <workItem from="1521784168986" duration="22000" />
-      <workItem from="1521908751796" duration="5222000" />
+      <workItem from="1521908751796" duration="5328000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12335000" />
+    <option name="totallyTimeSpent" value="12441000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
