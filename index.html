@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="myApp">
+<html ng-app="Demo">
 
 <head>
 	<title>Mfolio</title>
@@ -13,16 +13,11 @@
 			<a class="navbar-brand" href="#">KMFolio</a>
 		</div>
 		<ul class="nav navbar-nav">
-			<li class="active"><a href="#">Portfolio</a></li>
-			<!--<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
-				<ul class="dropdown-menu">
-					<li><a href="#">Page 1-1</a></li>
-					<li><a href="#">Page 1-2</a></li>
-					<li><a href="#">Page 1-3</a></li>
-				</ul>
-			</li>-->
-			<li><a href="#">About Us</a></li>
-			<li><a href="#">Contact Us</a></li>
+			<!-- <li class="active"><a href="portfolio">Portfolio</a></li> -->
+			<li><a href="portfolio">Portfolio</a></li>
+			<li><a href="addmf">Add MF</a></li>
+			<li><a href="aboutus">About Us</a></li>
+
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
 			<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -30,101 +25,20 @@
 		</ul>
 	</div>
 </nav>
-
-<!-- Code to add funds from list box and submit
-To-Do - Write the submit contents to JSON file
--->
-<div ng-controller="addMFController">
-	<h3 class="p-3 mb-2 bg-primary text-white">Add Mutual fund</h3>
-	<form class="form-horizontal" role="form" ng-submit="addItem()">
-	<div class="form-group">
-		<label class="col-md-1 control-label">MF Name</label>
-		<div class="col-md-4">
-			<!--<input type="text" class="form-control" name="MFName"
-				ng-model="mname" />-->
-			<select name="mname" id="mname"
-      			ng-options="x.MFName for x in data"
-      			ng-model="mname" class="form-control"></select>
-		</div>
-	</div>
-
-	<div class="form-group">
-		<label class="col-md-1 control-label">Folio Number</label>
-		<div class="col-md-4">
-			<input type="text" class="form-control" name="FolioNumber"
-				ng-model="folioNumber" />
-		</div>
-	</div>
-	<div class="form-group">
-		<label class="col-md-1 control-label">Invested amount</label>
-		<div class="col-md-4">
-			<input type="text" class="form-control" name=Investedamount"
-				ng-model="Investedamount" />
-		</div>
-	</div>
-		<div class="form-group">
-		<label class="col-md-1 control-label">Units</label>
-		<div class="col-md-4">
-			<input type="text" class="form-control" name="units"
-				ng-model="units" />
-		</div>
-	</div>
-		<div class="form-group">
-		<label class="col-md-1 control-label">NAV</label>
-		<div class="col-md-4">
-			<input type="text" class="form-control" name="NAV"
-				ng-model="NAV" />
-		</div>
-	</div>
-		<div class="form-group">
-		<label class="col-md-1 control-label">XIR</label>
-		<div class="col-md-4">
-			<input type="text" class="form-control" name="XIR"
-				ng-model="XIR" />
-		</div>
-	</div>
-	<div class="form-group">								
-		<div style="padding-left:110px">
-			<input type="submit" value="Add" class="btn btn-primary"/>
-		</div>
-	</div>
-</form>
-			
-			
-
+<div>
+	<ng-view></ng-view>
 </div>
-<h3 <h3 class="p-3 mb-2 bg-primary text-white">Portfolio</h3>
-<div ng-controller="addMFController">
-	 <!--{{data}}-->
-	<table class="table table-condensed table-striped table-bordered">
-	    <tr>
-	        <th>Mutual fund Name</th>
-	        <th>Folio Number</th>
-	        <th>Invested amount</th>
-	        <th>Units</th>
-	        <th>NAV</th>
-	        <th>XIR</th>
-	    </tr>
-	    <tbody>
-	        <tr ng-repeat="x in data">
-	            <td>{{x.MFName}}</td>
-	            <td>{{x.folioNumber}}</td>
-	            <td>{{x.InvestedAmount}}</td>
-	            <td>{{x.units}}</td>
-	            <td>{{x.NAV}}</td>
-	            <td>{{x.XIR}}</td>
-	        </tr>
-	    </tbody>
-	</table>
-</div>
-
 
 <link rel="stylesheet"   href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script	src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-<script	src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.17/angular.min.js"></script>
+<!--<script	src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.17/angular.min.js"></script>-->
+<script	src="node_modules/angular/angular.js"></script>
+<script	src="node_modules/angular-route/angular-route.js"></script>
 
-<script type="text/javascript" src="scripts/showPortfolio.js"></script>
+<!--<script type="text/javascript" src="scripts/app.js"></script>-->
+<script type="text/javascript" src="scripts/script.js"></script>
+<base href="/" />
 </body>
 </html>

@@ -1,0 +1,25 @@
+
+<h3 <h3 class="p-3 mb-2 bg-primary text-white">Portfolio</h3>
+<div ng-controller="addMFController">
+    <!--{{data}}-->
+    <table class="table table-condensed table-striped table-bordered">
+        <tr>
+            <th>Mutual fund Name</th>
+            <th>Folio Number</th>
+            <th>Invested amount</th>
+            <th>Units</th>
+            <th>NAV</th>
+            <th>XIR</th>
+        </tr>
+        <tbody>
+        <tr ng-repeat="x in data">
+            <td>{{x.MFName}}</td>
+            <td>{{x.folioNumber}}</td>
+            <td>{{x.InvestedAmount}}</td>
+            <td>{{x.units}}</td>
+            <td>{{x.NAV}}</td>
+            <td>{{x.XIR}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>

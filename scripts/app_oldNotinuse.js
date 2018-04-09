@@ -1,4 +1,4 @@
-var app = angular.module('myApp', []);
+var app = angular.module('myApp',[]);
 
 portfolio1Obj =  {"portfolio1":[
 						    { "MFName":"Aditya Birla Sun Life Banking & PSU Debt Fund Growth-Regular Plan", 
